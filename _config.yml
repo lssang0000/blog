@@ -1,5 +1,7 @@
-theme: "jekyll-theme-leap-day"
-title: "Comming Soon!"
-description: "Aiden - 의 - 개발노트 - 여행노트"
-#show_downloads: true
+theme           : "jekyll-theme-leap-day"
+title           : "Comming Soon!"
+description     : "Aiden - 의 - 개발노트 - 여행노트"
+#show_downloads : true
 google_analytics:
+
+portfolio_url   : "https://lssang0000.github.io/"
