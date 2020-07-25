@@ -5,7 +5,9 @@
 
 ## FrameWork
 
-Framework(이하 F/W)는 실체만 놓고 보면 library 집합체이다. 그렇다면 일반적으로 말하는 library와 F/W의 차이는 어디서 오는 걸까? 바로 인스턴스 제어(조립, 생성, 삭제 등의 생명주기 관리)에 대한 주체가 무엇이냐에 따라 결정된다. 인스턴스의 제어가 개발자가 작성한 코드가 아닌 library에 의해 수행되는 것을 제어가 역전(Inversion of Control, 이하 IoC)된다고 표현하는데, 이 IoC 기능 수행하는 library를 흔히 F/W라고 한다. 정확하게 말하자면, F/W가 대표적인 특징중 하나가 IoC 이다.
+Framework(이하 F/W)는 실체만 놓고 보면 library 집합체이다. 그렇다면 일반적으로 말하는 library와 F/W의 차이는 어디서 오는 걸까? 바로 인스턴스 제어(조립, 생성, 삭제 등의 생명주기 관리)에 대한 주체가 무엇이냐에 따라 결정된다. 
+
+인스턴스의 제어가 개발자가 작성한 코드가 아닌 library에 의해 수행되는 것을 제어가 역전(Inversion of Control, 이하 IoC)된다고 표현하는데, 이 IoC 기능 수행하는 library를 흔히 F/W라고 한다. 정확하게 말하자면, F/W가 대표적인 특징중 하나가 IoC 이다.
 
 ![](images/ioc.png "그림 출처 : sanghwan.lee")
 
@@ -67,7 +69,7 @@ Spring F/W는 Spring Core를 기본으로 다양한 기능을 제공한다. 아�
 |Spirng Web| |
 |Spirng Web MVC| |
 
-** 해당 테이블의 설명란은 추후 업데이트 예정입니다.
+** 해당 테이블의 설명란은 추후 업데이트 예정입니다. **
 
 ## Reference
 [1] [스프링 프레임워크](https://ko.wikipedia.org/wiki/%EC%8A%A4%ED%94%84%EB%A7%81_%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC "https://ko.wikipedia.org/wiki/스프링_프레임워크")  
