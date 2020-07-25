@@ -1,5 +1,3 @@
-<!-- toc -->
-
 > ---
 > **NOTE** | 블로그에 작성한 내용은 **의견**이 많이 포함되어있습니다. 레퍼런스가 없는 문장은 참고만 해주세요. 
 >
@@ -13,7 +11,7 @@ Framework(이하 F/W)는 실체만 놓고 보면 library 집합체이다. 그렇
 
 Byte code injection이라는 개념이 있는데, 이는 .java 파일이 .class 파일로 컴파일되면서 컴파일러가 개발자가 작성하지 않은 코드를 추가하는 것이다. 대표적으로 Class를 작성하는데 개발자가 작성하지 않아도 생성자가 없다면 컴파일러는 기본 생성자에 대한 byte code를 추가하는 것을 예로들 수 있다. IoC는 이 byte code injection과도 일맥상통한다고 볼 수 있다.
 
-## Spring Framework
+## Spring F/W
 
 Spring의 정의는 _자바 플랫폼을 위한 오픈 소스 애플리케이션 프레임워크_ 이며, 동적인 웹 사이트를 개발하기 위한 여러 가지 서비스를 제공하고 있다[1]. 그리고 바로 앞 단락에서 정리한 내용을 인용하면 다음과 같이 정의할 수도 있다.
 
@@ -25,7 +23,7 @@ Spring의 정의는 _자바 플랫폼을 위한 오픈 소스 애플리케이션
 
 반대로, _기능적 요구사항_ 은 비즈니스 요건에 따른 기능을 말하며, 대부분 특정 산업에 대한 전문 지식을 가지고 있는 개발자에 의해 구현된다. 기능적 요구사항의 예로는 쇼핑몰의 장바구니 목록 조회, 은행 시스템의 예금 시 이력 저장 등이 있다. 
 
-## Spring을 사용하는 이유
+## Spring F/W을 사용하는 이유
 
 물론 F/W를 사용하지 않고 수많은 유틸리티 성격의 기능까지 모두 구현한다면, 개발자 개인의 경험과 역량은 향상된다고 생각할 수 있다. 하지만 실제 프로젝트에서 이와 같은 행위는 굉장히 비 효율적일 수 있으며, 무엇보다 소프트웨어의 가장 큰 성격인 재사용성을 살리지 못하는 행위라고 할 수 있다. 이 외에도 F/W를 사용하는 수 많은 이유가 있겠지만 정리하자면 다음과 같다.
 
@@ -53,7 +51,7 @@ Spring F/W는 jakarta-EE(또는 java EE)[2] 스펙에 정의된 비 기능적 �
   
   - JMS (JSR 914) 
 
-# Spring Framework의 특징
+## Spring F/W의 특징
 
 Spring F/W는 Spring Core를 기본으로 다양한 기능을 제공한다. 아래 그림은 Spring F/W가 제공하는 대표적인 모듈들이다.
 
@@ -70,7 +68,9 @@ Spring F/W는 Spring Core를 기본으로 다양한 기능을 제공한다. 아�
 |Spirng Web MVC| |
 
 
-# Reference
+## Reference
 [1] [스프링 프레임워크](https://ko.wikipedia.org/wiki/%EC%8A%A4%ED%94%84%EB%A7%81_%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC "https://ko.wikipedia.org/wiki/스프링_프레임워크")  
 [2] [jakarta-ee](https://www.zdnet.com/article/good-bye-jee-hello-jakarta-ee/ "Oracle이 Sun을 인수하면서 오픈소스 진영의 jakarta-ee가 주목받고 있다.")  
 [3] [Spring Framework - Overview](https://docs.spring.io/spring/docs/current/spring-framework-reference/overview.html#overview)
+
+## [Back to Blog Home](../README.md)
