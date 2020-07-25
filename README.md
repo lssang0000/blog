@@ -1,29 +1,28 @@
-# NOTICE
+# NOTE
 
-블로그 이전 작업 중 ...   
-[티스토리 블로그](https://lssang.tistory.com/) 의 공개/비공개 포스팅을 이곳에 정리 중 입니다.
+- Posting 예정인 주제를 리스트업
+- 작성 완료한 Post는 링크를 제공
 
-
-# IT
+# ICT
 
 ## Base
 - [자료구조/알고리즘] Array, List
 - [자료구조/알고리즘] Map, Set
 - [자료구조/알고리즘] 이진탐색트리
 - [자료구조/알고리즘] B트리, B+트리
-- [자료구조/알고리즘] OSI Model
 - [Operating System] Scheduling
 - [Operating System] Scheduling
-- Transaction
+- [Network] OSI Model
 
 ## Java & Spring
 - [JAVA] LinkedList, ArrayList, Vector
 - [JAVA] Generic 
 - [JAVA] Interface, Abstract Class
-- [Spring F/W] Spring Framework 기본 개념
+- [[Spring F/W] Spring Framework 기본 개념](java/spring01.md)
 - [Spirng F/W] Sping Context와 DI
 - [Spring F/W] Spring ORM과 Spring DAO
 - [Spring F/W] Spring AOP
+- [Spring F/W] Trancsaction
 - [Spring boot] Spring boot 기본 개념과 기본 기능
 
 ## CICD
@@ -37,6 +36,7 @@
 ## Cloud
 - [AWS] 계정, IAM 살펴보기
 - [AWS] EC2 시작하기 (EBS, AMI, 시작 템플릿 사용하기)
+- [AWS] ELB와 KMS 사용하기
 - [AWS] ECR 사용하기
 - [AWS] EKS 시작하기
 - [Azure] 계정, AD, 테넌트, 구독, IAM 살펴보기
