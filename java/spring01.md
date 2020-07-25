@@ -71,8 +71,6 @@ Spring F/W는 Spring Core를 기본으로 다양한 기능을 제공한다. 아�
 
 
 # Reference
-[1] [스프링 프레임워크](https://ko.wikipedia.org/wiki/%EC%8A%A4%ED%94%84%EB%A7%81_%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC "https://ko.wikipedia.org/wiki/스프링_프레임워크")
-
-[2] [jakarta-ee](https://www.zdnet.com/article/good-bye-jee-hello-jakarta-ee/ "Oracle이 Sun을 인수하면서 오픈소스 진영의 jakarta-ee가 주목받고 있다.")
-
+[1] [스프링 프레임워크](https://ko.wikipedia.org/wiki/%EC%8A%A4%ED%94%84%EB%A7%81_%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC "https://ko.wikipedia.org/wiki/스프링_프레임워크")  
+[2] [jakarta-ee](https://www.zdnet.com/article/good-bye-jee-hello-jakarta-ee/ "Oracle이 Sun을 인수하면서 오픈소스 진영의 jakarta-ee가 주목받고 있다.")  
 [3] [Spring Framework - Overview](https://docs.spring.io/spring/docs/current/spring-framework-reference/overview.html#overview)
