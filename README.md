@@ -31,7 +31,7 @@
 
 ## Container
 - Docker 살펴보기
-- Kuberntets 살펴보기 
+- [Kuberntets 살펴보기](container/k8s01.md)
 
 ## Cloud
 - [AWS] 계정, IAM 살펴보기
