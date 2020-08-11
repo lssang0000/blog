@@ -62,6 +62,13 @@ Spring Boot = Spring F/W + 3rd-pary library + Spring Boot library
 - Profile
 
 - Logging
+  - 로깅 퍼사드
+    - SLF4j
+    - Commons Logging
+  - 로거
+    - Logback
+    - Log4j2
+    - JUL(java.util.logging)
 
 - Devtools
 
