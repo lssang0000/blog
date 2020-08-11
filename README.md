@@ -20,7 +20,7 @@
 - [Spring F/W] Spring ORM과 Spring DAO
 - [Spring F/W] Spring AOP
 - [Spring F/W] Trancsaction
-- [[Spring boot] Spring boot 기본 개념과 기본 기능](java/srpingboot01.md)
+- [[Spring boot] Spring boot 기본 개념과 기본 기능](java/springboot01.md)
 
 ## CICD
 - [Build] Ant, Maven, Gradle 살펴보기/비교하기
