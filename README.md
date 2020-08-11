@@ -10,20 +10,17 @@
 - [자료구조/알고리즘] Map, Set
 - [자료구조/알고리즘] 이진탐색트리
 - [자료구조/알고리즘] B트리, B+트리
-- [Operating System] Scheduling
-- [Operating System] Scheduling
-- [Network] OSI Model
 
 ## Java & Spring
 - [JAVA] LinkedList, ArrayList, Vector
-- [JAVA] Generic 
 - [JAVA] Interface, Abstract Class
+- [JAVA] Generic 
 - [[Spring F/W] Spring Framework 기본 개념](java/spring01.md)
 - [Spirng F/W] Sping Context와 DI
 - [Spring F/W] Spring ORM과 Spring DAO
 - [Spring F/W] Spring AOP
 - [Spring F/W] Trancsaction
-- [Spring boot] Spring boot 기본 개념과 기본 기능
+- [[Spring boot] Spring boot 기본 개념과 기본 기능](java/srpingboot01.md)
 
 ## CICD
 - [Build] Ant, Maven, Gradle 살펴보기/비교하기

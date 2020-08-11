@@ -1,5 +1,5 @@
 > ---
-> **NOTE** | 블로그에 작성한 내용은 **의견**이 많이 포함되어있습니다. 레퍼런스가 없는 문장은 참고만 해주세요. 
+> **NOTE** | 블로그에 작성한 내용은 **의견** 입니다. 레퍼런스가 없는 문장은 참고만 해주세요. 그럼에도 의견과 피드백은 감사합니다.
 >
 > ---
 
@@ -53,7 +53,7 @@ Spring F/W는 jakarta-EE(또는 java EE)[2] 스펙에 정의된 비 기능적 �
   
   - JMS (JSR 914) 
 
-## Spring F/W의 특징
+## Spring F/W의 특징 (작성 중)
 
 Spring F/W는 Spring Core를 기본으로 다양한 기능을 제공한다. 아래 그림은 Spring F/W가 제공하는 대표적인 모듈들이다.
 
@@ -69,7 +69,6 @@ Spring F/W는 Spring Core를 기본으로 다양한 기능을 제공한다. 아�
 |Spirng Web| |
 |Spirng Web MVC| |
 
-** 해당 테이블의 설명란은 추후 업데이트 예정입니다. **
 
 ## Reference
 [1] [스프링 프레임워크](https://ko.wikipedia.org/wiki/%EC%8A%A4%ED%94%84%EB%A7%81_%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC "https://ko.wikipedia.org/wiki/스프링_프레임워크")  
