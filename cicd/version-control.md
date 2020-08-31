@@ -60,7 +60,7 @@ Git 사용 시 작업 영역은 다음과 같다.
 - 잘못된 사용을 초래할 수 있다. 기능의 조합이 너무 유연해서 잘못된 branch 전략을 수립할 경우 프로젝트 관리가 매우 어려워 질 수 있다. 따라서, 전략을 명확히 공유할 수 있도록 프로젝트 팀 맴버가 한 자리 수로 구성되어있으며, 팀원 개개인이 역량을 충분히 가지고 있는 고급 프로젝트 관리에 적합하다.
 
 ## Reference
-[1] [git-scm](https://git-scm.com/book/en/v2)
-[2] [Distributes vs. Centralized](https://www.git-tower.com/learn/git/ebook/en/desktop-gui/appendix/from-subversion-to-git)
+[1] [git-scm](https://git-scm.com/book/en/v2)  
+[2] [Distributes vs. Centralized](https://www.git-tower.com/learn/git/ebook/en/desktop-gui/appendix/from-subversion-to-git)  
 
 ## [**Back to Blog Home**](../README.md)
