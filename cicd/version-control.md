@@ -1,7 +1,5 @@
 # SVN vs Git
 
-![](images/centralized-vs-distributed.png "https://www.git-tower.com/learn/git/ebook/en/desktop-gui/appendix/from-subversion-to-git")
-
 <br/> 
 
 ## SVN
@@ -32,9 +30,13 @@ Git 사용 시 작업 영역은 다음과 같다.
 
 모든 작업자는 Remote Repoistry로부터 리소스를 다운받으면 작업자 Local-PC에 생성되어있는 Local Repository에 리소스를 저장한다. 소스의 변경은 Working Directory에서 수행하고 반영할 파일은 Staging Area로 이동시켜 업로드를 수행한다.
 
-각 버전은 
+<br/> 
+
+![](images/centralized-vs-distributed.png "https://www.git-tower.com/learn/git/ebook/en/desktop-gui/appendix/from-subversion-to-git")
+[그림 3] Git vs SVN
 
 ## Git vs SVN
+
 지금까지 Git과 SVN의 특징을 살펴보았다. 이러한 특징에서 비롯된 두 버전관리 시스템의 장단점은 다음과 같다.
 
 #### SVN의 장점

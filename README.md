@@ -24,7 +24,7 @@
 
 ## CICD
 - [Build] Ant, Maven, Gradle 살펴보기/비교하기
-- [형상관리] SVN, GIT 살펴보기/비교하기
+- [[형상관리] SVN, GIT 살펴보기/비교하기](cicd/version-control.md)
 
 ## Container
 - Docker 살펴보기
