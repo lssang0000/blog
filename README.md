@@ -3,18 +3,17 @@
 - Posting 예정인 주제를 리스트업
 - 작성 완료한 Post는 링크를 제공
 
-# 개발 노트
+<br/>
 
  ¯＼_(ツ)_/¯ 
-
-## Base
+# 개발 노트
+### Base
 - [자료구조/알고리즘] Array, List
 - [자료구조/알고리즘] Map, Set
 - [자료구조/알고리즘] 이진탐색트리
 - [자료구조/알고리즘] B트리, B+트리
 
-
-## Java & Spring
+### Java & Spring
 - [JAVA] LinkedList, ArrayList, Vector
 - [JAVA] Interface, Abstract Class
 - [JAVA] Generic
@@ -31,19 +30,19 @@
 - [Spring Data] Spring ORM과 JAP
 - [Spring Data] Spring Data JDBC
 
-## Database
+### Database
 - [MySQL] Mysql과 대량의 데이터
 
-## CICD
+### CICD
 - [Build] Ant, Maven, Gradle 살펴보기/비교하기
 - [[형상관리] SVN, GIT 살펴보기/비교하기](cicd/version-control.md)
 
-## Container
+### Container
 - Docker 살펴보기
 - Docker Storage - AUFS, OverlayFS, ZFS, btrFS
 - [Kuberntets 살펴보기](container/k8s01.md)
 
-## Cloud
+### Cloud
 - [AWS] 계정, IAM 살펴보기
 - [AWS] EC2 시작하기 (EBS, AMI, 시작 템플릿 사용하기)
 - [AWS] ELB와 KMS 사용하기
@@ -54,14 +53,14 @@
 - [Azure] ACR 사용하기
 - [Azure] AKS 시작하기
 
-## Uncategorized
+### Uncategorized
 - REST API
 
+</br>
+
+ (ง˙∇˙)ว 
 # 여행 노트
-
-♪(´ε｀*)
-
-## 자전거
+### 자전거
 - 캐논데일 슈퍼식스 에보 2017
 - 제주도 한바퀴
 - 남산 / 북악산
