@@ -1,4 +1,4 @@
-# SVN vs Git
+# [형상관리] SVN, GIT 살펴보기/비교하기
 
 <br/> 
 

@@ -11,16 +11,27 @@
 - [자료구조/알고리즘] 이진탐색트리
 - [자료구조/알고리즘] B트리, B+트리
 
+
 ## Java & Spring
 - [JAVA] LinkedList, ArrayList, Vector
 - [JAVA] Interface, Abstract Class
-- [JAVA] Generic 
-- [[Spring F/W] Spring Framework 기본 개념](java/spring01.md)
+- [JAVA] Generic
+- [JAVA] Thread Safety code 
+- [JAVA] 부동소수점 오차
+- [[Spring F/W] Spring Framework 기본 개념](java/spring-fw-basic.md)
 - [Spirng F/W] Sping Context와 DI
-- [Spring F/W] Spring ORM과 Spring DAO
 - [Spring F/W] Spring AOP
-- [Spring F/W] Trancsaction
-- [[Spring boot] Spring boot 기본 개념과 기본 기능](java/springboot01.md)
+- [Spring F/W] Spring Trancsaction
+- [[Spring boot] Spring boot 기본 개념과 기본 기능](java/spring-boot-basic.md)
+- [Spring Batch]
+- [Spring Data] Spring JDBC Template
+- [Spring Data] Spring Mybatis
+- [Spring Data] Spring ORM 
+- [Spring Data] Spring JPA
+- [Spring Data] Spring Data JDBC
+
+## Database
+- [MySQL] Mysql과 대량의 데이터
 
 ## CICD
 - [Build] Ant, Maven, Gradle 살펴보기/비교하기
@@ -28,6 +39,7 @@
 
 ## Container
 - Docker 살펴보기
+- Docker Storage - AUFS, OverlayFS, ZFS, btrFS
 - [Kuberntets 살펴보기](container/k8s01.md)
 
 ## Cloud
@@ -41,6 +53,14 @@
 - [Azure] ACR 사용하기
 - [Azure] AKS 시작하기
 
+## Uncategorized
+- REST API
+
 # 여행 노트
 
 ## 자전거
+- 캐논데일 슈퍼식스 에보 2017
+- 제주도 한바퀴
+- 남산 / 북악산
+- 두물머리
+- 강화도
