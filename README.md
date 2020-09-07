@@ -5,6 +5,8 @@
 
 # 개발 노트
 
+ ¯＼_(ツ)_/¯ 
+
 ## Base
 - [자료구조/알고리즘] Array, List
 - [자료구조/알고리즘] Map, Set
@@ -23,11 +25,10 @@
 - [Spring F/W] Spring AOP
 - [Spring F/W] Spring Trancsaction
 - [[Spring boot] Spring boot 기본 개념과 기본 기능](java/spring-boot-basic.md)
-- [Spring Batch]
+- [Spring Batch] Spring Batch
 - [Spring Data] Spring JDBC Template
 - [Spring Data] Spring Mybatis
-- [Spring Data] Spring ORM 
-- [Spring Data] Spring JPA
+- [Spring Data] Spring ORM과 JAP
 - [Spring Data] Spring Data JDBC
 
 ## Database
@@ -57,6 +58,8 @@
 - REST API
 
 # 여행 노트
+
+♪(´ε｀*)
 
 ## 자전거
 - 캐논데일 슈퍼식스 에보 2017
