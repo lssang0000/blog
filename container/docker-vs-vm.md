@@ -49,7 +49,7 @@
 <img src="images/vm.png" width="49%" />
 
 ## Reference
-[Waht is a Container](https://www.docker.com/resources/what-container#/package_software)
-[컨테이너와 가상머신 비교](https://docs.microsoft.com/ko-kr/virtualization/windowscontainers/about/containers-vs-vm)
+[Waht is a Container](https://www.docker.com/resources/what-container#/package_software)  
+[컨테이너와 가상머신 비교](https://docs.microsoft.com/ko-kr/virtualization/windowscontainers/about/containers-vs-vm)  
 
 ## [**Back to Blog Home**](../README.md)
