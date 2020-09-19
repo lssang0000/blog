@@ -39,8 +39,8 @@
 - [[형상관리] SVN, GIT 살펴보기/비교하기](cicd/version-control.md)
 
 ### Container
-- [Docker vs. Virtual Machine](container/docker-vs-vm)
-- Docker Storage - AUFS, OverlayFS, ZFS, btrFS
+- [Docker vs. Virtual Machine](container/docker-vs-vm.md)
+- [Docker Storage - AUFS, OverlayFS, ZFS, btrFS](container/docker-storage.md)
 - [Kuberntets 살펴보기](container/k8s-basic.md)
 
 ### Cloud
