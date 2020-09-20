@@ -35,11 +35,11 @@
 - [MySQL] Mysql과 대량의 데이터
 
 ### CICD
-- [Build] Ant, Maven, Gradle 살펴보기/비교하기
-- [[형상관리] SVN, GIT 살펴보기/비교하기](cicd/version-control.md)
+- [Build] Ant, Maven, Gradle 비교하기
+- [[형상관리] SVN, GIT 비교하기](cicd/version-control.md)
 
 ### Container
-- [Docker vs. Virtual Machine](container/docker-vs-vm.md)
+- [Docker, Virtual Machine 비교하기](container/docker-vs-vm.md)
 - [Docker Storage](container/docker-storage.md)
 - [Kuberntets 기본 개념](container/k8s-basic.md)
 
