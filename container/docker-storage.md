@@ -2,10 +2,10 @@
 하나의 도커 이미지를 이용해 하나 이상의 도커 컨테이너를 만들 수 있다. 이 경우 이미지는 변경되면 안되며, 각 컨테이너에서 일어나는 변경을 관리하기 위해 컨테이너마다 데이터 파일을 별도로 관리해주어야 한다.
 
 ```
-Host OS 파일시스템 |                | Container 파일시스템
-                  ┌|─[Container 01]─|─[Data file01]
-[Docker Image A] ─┼|─[Container 02]─|─[Data file02]
-                  └|─[container 03]─|─[Data file03]
+<Host OS 파일시스템>|              | <Container 파일시스템>
+                  ┌|─ Container 01 ─|─ Data file01
+  Docker Image A ─┼|─ Container 02 ─|─ Data file02
+                  └|─ container 03 ─|─ Data file03
 ```
 - Docker Image 파일은 Host OS의 파일시스템에서 관리됨
 - Container가 사용하는 파일은 Host OS 위에 새롭게 구축된 파일시스템에서 관리됨
@@ -14,7 +14,7 @@ Host OS 파일시스템 |                | Container 파일시스템
 도커는 유니온 파일 마운트 시스템을 이용하여 이러한 구조를 가능하게 하며 해준다. 유니온 마운트란, 하나의 디렉토리 지점에서 여러개의 디렉토리를 마운트 함으로써, 마치 하나의 통합된 디렉토리처럼 보이게 하는 개념이다.
 
 ```
-[UnionFS] |  [A] [B''] [C'] [D']
+[UnionFS] | [A] [B''] [C'] [D']
 ----------|-----------------------
 [layer 3] |     [B''] [C'] [D']
 ----------|-----------------------
@@ -102,11 +102,11 @@ AUFS Branch Uni | ~~~~~~~~~~~~~~~~  | Union mount point
 ------------------------------------|--------------------
 AUFS Branch Con | ~~~~~~~~~~~~~~~~  | Container Layer
 ------------------------------------|--------------------
-AUFS Branch N  | ~~~~~~~~~~~~~~~~   |
+AUFS Branch N   | ~~~~~~~~~~~~~~~~  |
 ...                                 |
-AUFS Branch 03 | ~~~~~~~~~~~~~~~~   | Image Layers
-AUFS Branch 02 | ~~~~~~~~~~~~~~~~   |
-AUFS Branch 01 | ~~~~~~~~~~~~~~~~   |
+AUFS Branch 03  | ~~~~~~~~~~~~~~~~  | Image Layers
+AUFS Branch 02  | ~~~~~~~~~~~~~~~~  |
+AUFS Branch 01  | ~~~~~~~~~~~~~~~~  |
 ```
 
 AUFS의 특징을 정리하자면 다음과 같다.
@@ -129,7 +129,7 @@ AUFS보다 좀더 빠른것이 특징이며, 리눅스 커널 3.18부터 정식 
 
 
 ```
-docker 구조     |                   | overlayfs 구조 
+<docker 구조>                             <overlayfs 구조> 
 Container Mount | [A] [B'] [C] [D]  | merged
 ----------------|-------------------|--------------------
 Container Layer |     [B']     [D]  | upperdir
