@@ -40,8 +40,8 @@
 
 ### Container
 - [Docker vs. Virtual Machine](container/docker-vs-vm.md)
-- [Docker Storage - AUFS, OverlayFS, ZFS, btrFS](container/docker-storage.md)
-- [Kuberntets 살펴보기](container/k8s-basic.md)
+- [Docker Storage](container/docker-storage.md)
+- [Kuberntets 기본 개념](container/k8s-basic.md)
 
 ### Cloud
 - [AWS] 계정, IAM 살펴보기
