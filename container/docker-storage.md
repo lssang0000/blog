@@ -3,31 +3,27 @@
 
 ```
 Host OS 파일시스템 |                | Container 파일시스템
-                 ┌|─[Container 01]─|─[Data file01]
- [Docker Image A]┼|─[Container 02]─|─[Data file02]
-                 └|─[container 03]─|─[Data file03]
+                  ┌|─[Container 01]─|─[Data file01]
+[Docker Image A] ─┼|─[Container 02]─|─[Data file02]
+                  └|─[container 03]─|─[Data file03]
 ```
 - Docker Image 파일은 Host OS의 파일시스템에서 관리됨
 - Container가 사용하는 파일은 Host OS 위에 새롭게 구축된 파일시스템에서 관리됨
-
-<br />
 
 ## Union File Mount System
 도커는 유니온 파일 마운트 시스템을 이용하여 이러한 구조를 가능하게 하며 해준다. 유니온 마운트란, 하나의 디렉토리 지점에서 여러개의 디렉토리를 마운트 함으로써, 마치 하나의 통합된 디렉토리처럼 보이게 하는 개념이다.
 
 ```
-[UnionFS]   [A] [B''] [C'] [D']
----------------------------------
-[layer 3]      [B''] [C'] [D']
----------------------------------
-[layer 2]      [B']       [D]
----------------------------------
-[layer 1]  [A] [B]        [C]
+[UnionFS] |  [A] [B''] [C'] [D']
+----------|-----------------------
+[layer 3] |     [B''] [C'] [D']
+----------|-----------------------
+[layer 2] |     [B']       [D]
+----------|-----------------------
+[layer 1] | [A] [B]        [C]
 ```
 
 도커는 다양한 종류의 유니온 파일 시스템을 제공하기 위해 스토리지 드라이버를 지원한다. 도커가 지원하는 스토리지 드라이버와 몇 가지 유니온 파일 시스템에 살펴본다.
-
-<br />
 
 ## Storage Driver 
 내가 사용하는 Docker의 스토리지 드라이버 정보는 다음 명령어를 통해 확인할 수 있다.
@@ -90,12 +86,10 @@ Server:
  Live Restore Enabled: false
 ```
 
-<br />
-
 ## AUFS
 
-> AUFS(Advanced mulit-layered unification filesystem)는 2006년에 Junjiro Okajima에 의해 개발되었다. 신뢰성과 성능 개선을 목표로 하였으나 writable branch balancing, 및 기타 개선사항과 같은 일부 새로운 개념들도 도입하였으며, 이 중 일부는 현재 UnionFS 2.x 브랜치에 구현되어 있다. <br/>
-> [출처 : Wikipedia]
+> AUFS(Advanced mulit-layered unification filesystem)는 2006년에 Junjiro Okajima에 의해 개발되었다. 신뢰성과 성능 개선을 목표로 하였으나 writable branch balancing, 및 기타 개선사항과 같은 일부 새로운 개념들도 도입하였으며, 이 중 일부는 현재 UnionFS 2.x 브랜치에 구현되어 있다. <br/><br/>
+> [출처] Wikipedia
 
 AUFS는 유니온 파일 시스템의 하나로 여러 개의 디렉토리를 일련의 스택으로 묶어서 하나의 단일 뷰로 보여준다. 스택을 구성하는 각 layer를 branch라고 부른다. AUFS를 사용하는 환경에서 도커 이미지는 여러개의 읽기 전용 branch로 구성된 Image Layer에 포함된다. 
 
@@ -105,9 +99,9 @@ AUFS는 유니온 파일 시스템의 하나로 여러 개의 디렉토리를 �
 
 ```
 AUFS Branch Uni | ~~~~~~~~~~~~~~~~  | Union mount point
----------------------------------------------------------
+------------------------------------|--------------------
 AUFS Branch Con | ~~~~~~~~~~~~~~~~  | Container Layer
----------------------------------------------------------
+------------------------------------|--------------------
 AUFS Branch N  | ~~~~~~~~~~~~~~~~   |
 ...                                 |
 AUFS Branch 03 | ~~~~~~~~~~~~~~~~   | Image Layers
@@ -122,8 +116,6 @@ AUFS의 특징을 정리하자면 다음과 같다.
 - AUFS 스택은 여러 개의 파일 시스템을 단일 뷰로 만들고 이를 마운트 포인트로 제공
 - 스택을 이루는 디렉토리들은 하나의 마운트 포인터로 묶일 수 있어야 하므로 반드시 같은 리눅스 호스트에 존재해야 함
 
-<br />
-
 ## OverlayFS
 
 > AUFS는 꽤 오래 전 (2006년) 에 개발되었기 때문에 레퍼런스가 많은 편이며 쉽게 사용할 수 있다는 장점이 있지만, 리눅스 커널의 Mainline에 포함되어 있지 않다는 단점이 있다. 따라서 CentOS와 같은 보수적인 레드햇 계열 리눅스는 AUFS 모듈을 커널에 내장시키지 않았으며, AUFS 대신에 Devicemapper를 사용하기도 했다 (물론 AUFS를 설치하면 CentOS에서도 사용할 수는 있다).<br/><br/>
@@ -137,11 +129,11 @@ AUFS보다 좀더 빠른것이 특징이며, 리눅스 커널 3.18부터 정식 
 
 
 ```
-docker 구조      |                   | overlayfs 구조 
+docker 구조     |                   | overlayfs 구조 
 Container Mount | [A] [B'] [C] [D]  | merged
----------------------------------------------------------
+----------------|-------------------|--------------------
 Container Layer |     [B']     [D]  | upperdir
----------------------------------------------------------
+----------------|-------------------|--------------------
 Image Layers    | [A] [B]  [C]      | lowerdir
 ```
 
@@ -156,8 +148,6 @@ OverlayFS의 특징을 정리하자면 다음과 같다.
 - 리눅스 커널 3.18부터 정식 지원
 - 좀더 빠르다
 
-<br />
-
 ## OverlayFS2
 
 OverLayFS를 설명한 [도커 공식 문서](https://docs.docker.com/storage/storagedriver/overlayfs-driver/)에 따르면 대표적인 특징은 다음과 같다.
@@ -167,31 +157,24 @@ OverLayFS를 설명한 [도커 공식 문서](https://docs.docker.com/storage/st
 
 더욱 상세한 설명은 더 공부 후 기술할 예정이다.
 
-<br />
-
 ## Devicemapper - loop-lvm
 
 (작성중)
-
-<br />
 
 ## Device mapper - direct-lvm
 
 (작성중)
 
-<br />
 
 ## zfs
 
 (작성중)
 
-<br />
 
 ## btrfs
 
 (작성중)
 
-<br />
 
 ## Reference
 - https://docs.docker.com/storage/storagedriver/select-storage-driver/
