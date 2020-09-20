@@ -2,7 +2,7 @@
 하나의 도커 이미지를 이용해 하나 이상의 도커 컨테이너를 만들 수 있다. 이 경우 이미지는 변경되면 안되며, 각 컨테이너에서 일어나는 변경을 관리하기 위해 컨테이너마다 데이터 파일을 별도로 관리해주어야 한다.
 
 ```
-<Host OS 파일시스템>|              | <Container 파일시스템>
+<Host OS 파일시스템>                   <Container 파일시스템>
                   ┌|─ Container 01 ─|─ Data file01
   Docker Image A ─┼|─ Container 02 ─|─ Data file02
                   └|─ container 03 ─|─ Data file03
