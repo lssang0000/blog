@@ -1,6 +1,6 @@
 theme           : "jekyll-theme-leap-day"
-title           : "A-Blog"
-description     : "Aiden - 의 - 개발노트 - 여행노트"
+title           : "자전거맨의 블로그"
+description     : "자전거맨 - 의 - 개발노트 - 여행노트"
 #show_downloads : true
 google_analytics:
 
