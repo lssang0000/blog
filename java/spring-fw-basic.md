@@ -69,6 +69,10 @@ Spring F/W는 Spring Core를 기본으로 다양한 기능을 제공한다. 아�
 |Spirng Web| |
 |Spirng Web MVC| |
 
+## 
+
+## 
+[Spring Core Techonologies](https://docs.spring.io/spring-framework/docs/current/spring-framework-reference/core.html#spring-core)에 보면 Srping AOP는 Java-ee의 요구의 80%를 충족시킨다고 한다. 
 
 ## Reference
 [1] [스프링 프레임워크](https://ko.wikipedia.org/wiki/%EC%8A%A4%ED%94%84%EB%A7%81_%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC "https://ko.wikipedia.org/wiki/스프링_프레임워크")  

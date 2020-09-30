@@ -54,8 +54,15 @@
 - [Azure] ACR 사용하기
 - [Azure] AKS 시작하기
 
-### Uncategorized
-- REST API
+###  Architecture & Design Pattern
+- Architecture Pattern, Design Pattern
+- [Design] Singleton
+- [Design] Factory
+- [Design] Singleton
+- [Design] Facade
+- [Artitecture] REST
+- [Artitecture] CQRS
+- [Artitecture] SAGA
 
 <br />
 
