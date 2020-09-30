@@ -86,7 +86,7 @@ HTTP에 기빈한(http basted) RESTful은 다음과 같은 요소로 정의된�
 ## 생각 정리
 아직 많은 부분을 더 살펴보고 이 글도 보완해야 하겠지만, 필드에서 RESTful API라고 구현한 것들이 REST냐 아니냐 하는 이슈가 있는 것 같다. 
 
-[Spring Core Techonologies](https://docs.spring.io/spring-framework/docs/current/spring-framework-reference/core.html#spring-core)에 보면 Srping AOP는 Java-ee의 요구의 80%를 충족시킨다고 한다. 연관지어 생각해본다면 내가 만든 API가 얼마나 REST의 요건을 충족시키는지 생각해보면 답이 나올 것 같다. Spring F/W가 제공해주는 기능을 통해 구현한 것이라면 Spring F/W가 충족시키는 무엇인지, 내가 추가로 구현한 코드는 어떤 기능을 만족하는지 점검해보는 것이 좋겠다.
+[Spring Core Techonologies](https://docs.spring.io/spring-framework/docs/current/spring-framework-reference/core.html#spring-core)에 보면 Srping AOP는 Java-ee AOP 요구의 80%를 충족시킨다고 한다. 연관지어 생각해본다면 내가 만든 API가 얼마나 REST의 요건을 충족시키는지 생각해보면 답이 나올 것 같다. Spring F/W가 제공해주는 기능을 통해 구현한 것이라면 Spring F/W가 충족시키는 무엇인지, 내가 추가로 구현한 코드는 어떤 기능을 만족하는지 점검해보는 것이 좋겠다.
 
 <br/>
 
@@ -94,7 +94,6 @@ HTTP에 기빈한(http basted) RESTful은 다음과 같은 요소로 정의된�
 [1] Architectural Styles and the Design of Network-based Software Architectures  
 [2] https://blog.npcode.com/2017/03/02/바쁜-개발자들을-위한-rest-논문-요약/  
 [3] http://haah.kr/2017/06/12/rest-the-big-lie/  
-[4] https://gmlwjd9405.github.io/2018/09/21/rest-and-restful.html
 
 
 ## [**Back to Blog Home**](../README.md)
