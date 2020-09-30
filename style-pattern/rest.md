@@ -5,8 +5,6 @@ REST는 Roy T. Fielding의 박사학위 논문 “Architectural Styles and the D
 
 REST는 소프트웨어 아키텍처가 아니라 아키텍처 스타일이라고 한다. REST를 이해하기위한 저 두 단어들이 한번도 생각해본 적 없는 단어이다. 이 개념부터 살펴보자.
 
-<br/>
-
 ## Software Architecture
 > 소프트웨어 시스템의 기본 구조와 이러한 구조 및 시스템을 만드는 원칙을 나타낸다. <br/>
 > 출처 : [wiki - Software architecture](https://en.wikipedia.org/wiki/Software_architecture)
@@ -17,9 +15,7 @@ REST는 소프트웨어 아키텍처가 아니라 아키텍처 스타일이라�
 > A software architecture is defined by a configuration of architectural elements--components, connectors, and data--constrained in their relationships in order to achieve a desired set of architectural properties. <br/>
 > 출처 : [[1]](https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm)
 
-`시스템의 구성(컴포넌트, 컨넥터, 데이터) + 구축 원칙`정도로 이해하고 넘어간다.
-
-<br/>
+**시스템의 구성(컴포넌트, 컨넥터, 데이터) + 구축 원칙** 정도로 이해하고 넘어간다.
 
 ## Architecture Style
 > An architectural style is a coordinated set of architectural constraints that restricts the roles/features of architectural elements and the allowed relationships among those elements within any architecture that conforms to that style.
@@ -28,12 +24,12 @@ REST는 소프트웨어 아키텍처가 아니라 아키텍처 스타일이라�
 > 특정 스타일을 따르는 아키텍처가 지켜야하는 제약 조건들의 집합이다.
 > 출처 : [[2]](https://blog.npcode.com/2017/03/02/바쁜-개발자들을-위한-rest-논문-요약/)
 
-소프트웨어 아키텍처의 `구축 원칙`에 해당하는 개념인 것 같다.
+소프트웨어 아키텍처의 **구축 원칙**에 해당하는 개념인 것 같다.
 
 <br/>
 
 ## 다시 REST
-Representataional State Transfer는 웹 [아키텍처의 문제들](https://www.ics.uci.edu/~fielding/pubs/dissertation/web_arch_domain.htm)을 해결하기 위해 고안된 `아키텍처 스타일`이다. REST가 설명하는 아키텍처 구축 원칙을 정리하자면 다음과 같다. 
+Representataional State Transfer는 웹 [아키텍처의 문제들](https://www.ics.uci.edu/~fielding/pubs/dissertation/web_arch_domain.htm)을 해결하기 위해 고안된 **아키텍처 스타일**이다. REST가 설명하는 아키텍처 구축 원칙을 정리하자면 다음과 같다. 
 
 - Client-Server
   - User Interface와 Data-storage의 문제를 분리한다.
@@ -70,9 +66,7 @@ Representataional State Transfer는 웹 [아키텍처의 문제들](https://www.
 <br/>
 
 ## RESTful
-`REST 아키텍처 스타일을 준수하는` 정도로 해석하면 되겠다.
-
-<br/>
+**REST 아키텍처 스타일을 준수하는** 정도로 해석하면 되겠다.
 
 ## RESTful API
 
@@ -88,8 +82,6 @@ HTTP에 기빈한(http basted) RESTful은 다음과 같은 요소로 정의된�
   - microformats
   - application/vnd.collection+json
   - ...
-
-<br/>
 
 ## 생각 정리
 아직 많은 부분을 더 살펴보고 이 글도 보완해야 하겠지만, 필드에서 RESTful API라고 구현한 것들이 REST냐 아니냐 하는 이슈가 있는 것 같다. 
