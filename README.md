@@ -60,7 +60,7 @@
 - [Design] Factory
 - [Design] Singleton
 - [Design] Facade
-- [Architecture] REST
+- [[Architecture] REST](style-pattern/rest.md)
 - [Architecture] CQRS
 - [Architecture] SAGA
 
