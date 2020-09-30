@@ -60,9 +60,9 @@
 - [Design] Factory
 - [Design] Singleton
 - [Design] Facade
-- [Artitecture] REST
-- [Artitecture] CQRS
-- [Artitecture] SAGA
+- [Architecture] REST
+- [Architecture] CQRS
+- [Architecture] SAGA
 
 <br />
 
