@@ -54,8 +54,8 @@
 - [Azure] ACR 사용하기
 - [Azure] AKS 시작하기
 
-###  Architecture & Design Pattern
-- Architecture Pattern, Design Pattern
+###  Architecture Style & Design Pattern
+- Architecture Style, Design Pattern
 - [Design] Singleton
 - [Design] Factory
 - [Design] Singleton
