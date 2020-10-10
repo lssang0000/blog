@@ -1,3 +1,5 @@
+(정리중 ... )
+
 Persistence Framework
 - JDBC 프로그래밍의 복잡함이나 번거로움을 간단하게 제공
 - SQLMapper, ORM ...
