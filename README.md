@@ -8,7 +8,7 @@
 # 개발 노트 
  ¯＼_(ツ)_/¯ 
 
-### Base
+### Common
 - [자료구조/알고리즘] Array, List
 - [자료구조/알고리즘] Map, Set
 - [자료구조/알고리즘] 이진탐색트리
@@ -33,6 +33,7 @@
 
 ### Database
 - [MySQL] Mysql과 대량의 데이터
+- [낙관적 잠금, 비관적 잠금](database/pessimistic_optimistic_locking.md)
 
 ### CICD
 - [Build] Ant, Maven, Gradle 비교하기
@@ -42,6 +43,7 @@
 - [Docker, Virtual Machine 비교하기](container/docker-vs-vm.md)
 - [Docker Storage](container/docker-storage.md)
 - [Kuberntets 기본 개념](container/k8s-basic.md)
+- [[K8s in action] Chpater11. Understanding Kubernetes internals](container/k8s-in-action-11.md)
 
 ### Cloud
 - [AWS] 계정, IAM 살펴보기
