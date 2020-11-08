@@ -40,9 +40,9 @@
 - [[형상관리] SVN, GIT 비교하기](cicd/svn-vs-git.md)
 
 ### Container
-- [Docker, Virtual Machine 비교하기](container/docker-vs-vm.md)
-- [Docker Storage](container/docker-storage.md)
-- [Kuberntets 기본 개념](container/k8s-basic.md)
+- [[Docker] Docker vs. Virtual Machine](container/docker-vs-vm.md)
+- [[Docker] Storage](container/docker-storage.md)
+- [[Kuberntets] 기본 개념](container/k8s-basic.md)
 - [[K8s in action] Chpater11. Understanding Kubernetes internals](container/k8s-in-action-11.md)
 
 ### Cloud
