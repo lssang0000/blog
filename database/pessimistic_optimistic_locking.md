@@ -25,3 +25,6 @@
 1. p1이 write를 완료함, 이와 동시에 레코드를 unlock
 1. p2가 레코드를 read, 이와 동시에 레코드를 lock
 1. p2가 write를 완료함. 이와 동시에 리코드를 unlock
+
+## 성능 차이
+- LOCK을 사용하고 Wait 하는 시간이 없기 때문에 대체로 optimistic 방식일 빠르다고 한다. 하지만 ...

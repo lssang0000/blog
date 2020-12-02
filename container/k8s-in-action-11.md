@@ -29,15 +29,15 @@
 
 <br/>
 
-### Control Plain
+## Control Plain
 컨트롤 플레인은 클러스터 전체 리소스를 생성하고 관리한다. 컨트롤 플레인을 구성하는 컴포넌트는 여러 서버에 걸쳐 분할 가능하며(Multi instaces)하며 클러스터의 상태를 저장하고 관리하지만 애플리케이션 컨테이너를 직접 실행하지는 않는다.
 
 - [etcd 분산 스토리지](#etcd)
-- API 서버(#api-server)
-- 스케줄러(#scheduler)
-- 컨트롤러 매니저(#controller-manager)
+- [API 서버](#api-server)
+- [스케줄러](#scheduler)
+- [컨트롤러 매니저](#controller-manager)
 
-#### etcd
+### etcd
 - Multi-instance로 구성되는 key-value 기반의 분산 저장소
 - 모든 k8s 리소스의 실행 상태를 저장
 - 오직 API 서버와 통신
@@ -59,7 +59,7 @@
 
   ![](images/figure_11_2.png "그림 출처 : Kubernetes in action")
 
-#### API Server
+### API Server
 - kubectl, Pod 와 같은 클라이언트와 통신하는 중앙 컴포넌트
 - 클라이언트의 요청에 대해 3단계 검증 과정을 거쳐 RESTful CURD를 제공
   1. Authentication (인증) - 클러스터 접근 대상인지 검증
@@ -83,15 +83,17 @@
   1. etcd에 오브젝트의 상태값을 업데이트함
   1. 변경을 모니터링하는 클라이언트 들에게 변경을 알림
 
-#### Scheduler
+### Scheduler
 
 - POD가 생성될 노드를 결정
 - 기본 매커니즘은 다음과 같음
+
 1. API 감시 메커니즘에 의해 POD의 생성 요청을 감지
 1. 생성될 POD의 manifest를 전달받음
 1. 새로운 POD를 특정 노드에 예약하고, API Server를 통해 kubelet에게 생성 요청
+
 - 임의의 노드를 선택할 수 있지만, 최적의 노드를 선택하기 위해 Machine Learning 을 도입하기도 함
-- 여러 개의 스케줄러를 생성하고 Pod Manifest에 활성화 시킬 스케줄러 이름을 명시할 수 있음 
+- 여러 스케줄러를 생성하고 Pod Manifest에 활성화 시킬 스케줄러 이름을 명시할 수 있음 
 - 노드 선택 고려사항
   - 리소스는 충분한가?
   - Pod의 manifest가 예약한 노드인가?
@@ -103,16 +105,17 @@
 
  ![](images/figure_11_5.png "그림 출처 : Kubernetes in action")
 
-#### Controller Manager
+### Controller Manager
 
 - controller 리소스를 활성화 시키는 리소스
 - POD 생성/삭제 시나리오
+
 1. controller는 label이 matching된 pod의 갯수를 API Server에 요청(조회)
 1. API Server는 etcd에서 갯수를 조회하여 controller에 반환함
 1. 조회한 pod의 갯수가 기준보다 낮아/높아 API Server에 생성/삭제을 요청(manifest 전달)
 1. API Server는 Scheduler에게 변경 요청을 알림(manifest 전달)
 1. Scheduler는 변경 요청을 감지하고 POD를 생성/삭제할 노드A를 선택
-1. Scheduler는 A노드에 POD생성/삭제을 API Server에 요청
+1. Scheduler는 A노드에 POD생성/삭제를 API Server에 요청
 1. API Server는 A노드의 kubelet에 변경 요청을 알림
 1. kubelet은 노드에 Container를 생성/삭제
 1. kubelet은 container가 생성됨을 API Server에 알림
@@ -123,10 +126,15 @@
 
 <br/>
 
-### Nodes
+## Nodes
 애플리케이션 컨테이너를 직접 실행하며, 컨테이너의 실행 작업을 관리한다.
 
 - kublet
 - kube-proxy(Service proxy)
 - Container runtime
 
+### Kublet
+
+### Kube-porxy
+
+### Container Runtime
